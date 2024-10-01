@@ -1,0 +1,209 @@
+﻿title: Mount-everest
+tags:
+position: -2421,-847
+---
+Stephanie:Josh! Wake up! it's time to go climb mount everest.
+->Wake up.
+    <<jump GoodResponseBed>>
+->Ask to sleep longer
+    <<jump midbedresp>>
+->Don't wake up.
+    <<jump BadResponseBed>>
+===
+title: BadResponseBed
+position: -2070,-924
+---
+*You fall back asleep and never find out what it feels like reaching the top of mount everest*
+===
+
+title: GoodResponseBed
+position: -2766,-751
+---
+*You wake up*
+
+Stephanie:Finally you woke up.
+<<jump Continue>>
+===
+title: midbedresp
+position: -2420,-670
+---
+Stephanie: Fine you can sleep for a bit longer.
+*1 hour 30 Minutes later*
+->Wake up finally
+    <<jump GoodResponseBed>>
+->Stay asleep and avoid the trip with Stephanie
+    <<jump Stayasleep2>>
+===
+title: Stayasleep2
+position: -2078,-791
+---
+You never woke up and Stephanie went on her own never to be seen again.
+===
+title: Continue
+position: -2766,-525
+---
+*Stephanie hands you your coffee*
+
+Stephanie:About time you woke up it's almost 9:00AM!
+
+*You'd apologize and thank Stephanie for making your coffee*
+
+Stephanie:You ready to go yet?
+->Yes
+    <<jump Yes>>
+->No
+    <<jump No>>
+===
+title: Yes
+position: -3055,-473
+---
+Stephanie:Ok come on let's go then
+<<jump Continue2>>
+===
+title: No
+position: -3054,-779
+---
+Stephanie:How the heck aren't you ready did you not already pack your stuff last night?
+
+*You'd apologize again and say you did pack last night but weren't sure if you are ready for the large climb yet*
+
+Stephanie:When are we gonna start then?
+->Nevermind let's go now
+    <<jump Continue2>>
+->Maybe an hour
+    <<jump Hourwait>>
+->I don't think we should do this trip and should go back home instead.
+    <<jump Fuzzles>>
+===
+title: Continue2
+position: -3059,-163
+---
+Stephanie:Finally let's start this big adventure.
+<<jump beganclimb>>
+===
+
+title: Hourwait
+position: -3320,-340
+---
+*1 hour later*
+<<jump Continue2>>
+===
+title: Fuzzles
+position: -3061,-996
+---
+*You both go back home to see your cat named Fuzzles and avoid this great adventure*
+
+===
+title: beganclimb
+position: -2768,-159
+---
+Narrarator:You and Stephanie now began the climb time went by fast and the weather conditons only got worse and worse as you climbed.
+
+Stephanie:J-Josh I'm S-So cold!
+->Offer your coat to support her.
+    <<jump Comfortingswetr>>
+->Look threw your bag to see if you have a spare coat or blanket for her.
+    <<jump Thesearch>>
+->Stop at a break spot to catch a breather and to warm up
+    <<jump Pitstop>>
+
+---
+
+===
+title: Comfortingswetr
+position: -2415,-337
+---
+*You offer your sweater to Stephanie*
+
+Stephanie:Oh are you sure?
+->Yes
+    <<jump Gratful>>
+->No *Restart and answer the question again*
+    <<jump beganclimb>>
+===
+title: Thesearch
+position: -2421,-164
+---
+*you'd begin to search your bag and would end up finding another coat and you'd and you'd hand it over to Stephanie.
+
+Stephanie:T-Thank you J-Josh! BRRrrrr-
+<<jump Gratful>>
+===
+title: Pitstop
+position: -2410,7
+---
+*You and Stephanie Stopped at a break point to eat, warm up and recover from this exhausting journey*
+
+Stephanie:This Mountain is so much biger then I thought Josh my goodness.
+
+*You'd agree and ask if she needed anything*
+
+Stephanie:I should be ok let's just chill here for a few
+
+About 1 hour later...
+    <<jump Gratful>>
+===
+title: Gratful
+position: -2005,-158
+---
+Stephanie:Thanks Josh this is gonna be so helpfully it's so comfy!
+<<jump contnu50>>
+
+title: contnu50
+position: 969,-232
+---
+Stephanie:Come on Josh were jsut about past the half way mark.
+
+Narrarator:You and Stephanie now nearing the top believe it more then ever that you guys can make it.
+    
+===
+
+title: contnu
+position: -1516,-186
+---
+Narrarator:You and Stephanie continued venturing up the hill your now around 70% of the way there you got this!
+
+Stephanie:Oh Josh were so close!
+
+Stephanie:J-Josh my legs are starting to give up
+->Help her and carry her the rest of the way up
+    <<jump Help>>
+->Make her try to walk the rest of the way up on her own
+    <<jump Nohelp>>
+---
+===
+
+title: contnu50
+position: -1796,-315
+---
+Stephanie:Come on Josh were over the half way mark
+
+<<jump contnu>>
+===
+title: Help
+position: -1234,-67
+---
+Stephanie:Were super close come on Josh! 
+
+*You'd continue picking up the speed as you got closer the wind pushing agianst you*
+<<jump totop>>
+===
+title: Nohelp
+position: -1226,-309
+---
+*Stephanie Would start limp walking and going super slow...You have no choice but to carry her.. 
+->Carry Stephanie to the top.
+<<jump totop>>
+===
+title: totop
+position: -983,-182
+---
+*You see the top as you began to start running Stephanie now passed out on your back your more dtermined to get to thge top*
+
+*You'd shoot your flare for help Stephanie regaing concusions slowly*
+
+*you'd take a picture before getting picked up from an emergency heli.
+
+Thanks for playing my game story dialogue
+===
+
