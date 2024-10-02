@@ -1,4 +1,4 @@
-﻿title: Mount-everest
+﻿title: Mounteverest
 tags:
 position: -2421,-847
 ---
@@ -14,6 +14,7 @@ title: BadResponseBed
 position: -2070,-924
 ---
 *You fall back asleep and never find out what it feels like reaching the top of mount everest*
+<<jump Badending>>
 ===
 
 title: GoodResponseBed
@@ -38,6 +39,7 @@ title: Stayasleep2
 position: -2078,-791
 ---
 You never woke up and Stephanie went on her own never to be seen again.
+<<jump Badending>>
 ===
 title: Continue
 position: -2766,-525
@@ -92,7 +94,7 @@ title: Fuzzles
 position: -3061,-996
 ---
 *You both go back home to see your cat named Fuzzles and avoid this great adventure*
-
+    <<jump Thesecretending>>
 ===
 title: beganclimb
 position: -2768,-159
@@ -202,7 +204,28 @@ position: -983,-182
 
 *You'd shoot your flare for help Stephanie regaing concusions slowly*
 
-*you'd take a picture before getting picked up from an emergency heli.
+*you'd take a picture before getting picked up from an emergency heli*
+<<jump GoodEnd>>
+===
 
-Thanks for playing my first game story dialogue.
+title: GoodEnd
+position: -914,-892
+---
+Yay you made it! Thanks for playing my game story dialogue. If you wish to try to get the other endings click the restart button bellow.
+->Restart
+<<jump Mounteverest>>
+===
+title: Badending
+position: -1518,-692
+---
+Please try again you got a bad ending ;-;
+-> Restart
+ <<jump Mounteverest>>
+===
+title: Thesecretending
+position: -1196,-970
+---
+You found a secret ending you and Stephanie don't climb mounteverst but instead go home to see fuzzles. Feel free to try again to get the proper ending.
+->Restart?
+    <<jump Mounteverest>>
 ===
